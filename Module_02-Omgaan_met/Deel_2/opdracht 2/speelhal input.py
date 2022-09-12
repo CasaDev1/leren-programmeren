@@ -1,0 +1,11 @@
+ticket = int(input("hoeveel tickets wil je?"))
+print (type(ticket))
+prijs_ticket = float(input("wat kost een ticket"))
+prijs_ticket_centen = int (prijs_ticket * 100)
+print(f"de prijs van {ticket} tickets is: {ticket * prijs_ticket_centen}")
+
+vipticket = int(input("hoeveel viptickets wil je?"))
+print (type(vipticket))
+prijs_vipticket = float(input("wat kost een vipticket"))
+prijs_vipticket_centen= int (prijs_vipticket * 100)
+print(f"de prijs van {vipticket} viptickets is: {vipticket * prijs_vipticket_centen}")
