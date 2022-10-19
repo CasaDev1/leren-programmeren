@@ -63,7 +63,7 @@ if ultimate.lower() == "ja":
     hulplijn = input("Was de hulplijn Ja Of Nee:")
     if hulplijn.lower == "ja":
         print("Oke je krijgt een hint De hint is dat diegene het EK had gewonnen in 2016")
-    else:
+    elif hulplijn.lower() == "nee":
         print("Oke je krijgt de hint niet") 
     ultimatevraag = input("Wie is de GOAT Ronaldo of Messi?:")
     if ultimatevraag.lower() == "ronaldo":
