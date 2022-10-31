@@ -8,10 +8,10 @@ for t in range(5):
     robotArm.moveRight()
     robotArm.moveRight()
     robotArm.drop()
-    robotArm.moveLeft()
-    robotArm.moveLeft()
-robotArm.moveRight()
-robotArm.moveRight()
+    if t < 4:
+        robotArm.moveLeft()
+        robotArm.moveLeft()
+
 for z in range(5):
     robotArm.grab()
     robotArm.moveLeft()
