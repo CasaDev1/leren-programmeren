@@ -12,7 +12,14 @@ tiencent = 10
 vijfcent = 5
 tweecent = 2
 eencent = 1
-
+pan = 0
+pan1 = 0
+pan2 = 0
+pan3 = 0
+pan4 = 0
+pan5 = 0
+pan6 = 0
+pan7 = 0
 toPay = int(float(input('Amount to pay: '))* 100) #
 paid = int(float(input('Paid amount: ')) * 100) #
 change = paid - toPay # dit is de wisselgeld variable 
@@ -60,7 +67,6 @@ if change > 0: # als het wisselgeld groter dan nul is dan begint het programma
 
 
 
-try:
   if change > 0: #Hier laat hij de change zien dat is ingevuld plus als de change niet compleet is terug gegeven 
     print('Change not returned: ', str(change) + ' cents')
   else:
@@ -72,6 +78,4 @@ try:
     print(f"{tiencent}: {pan5}")
     print(f"{vijfcent}: {pan6}")
     print(f"{tweecent}: {pan7}")
-except NameError:
-  print("done")
-  exit()
+    print("done!!")
