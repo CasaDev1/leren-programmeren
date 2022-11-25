@@ -13,8 +13,9 @@ while q < 9:
     else:
         robotArm.drop()
     if q == 8:
-        break 
-    robotArm.moveLeft()
+        q = 9
+    else: 
+        robotArm.moveLeft()
     q = q + 1
 
 
