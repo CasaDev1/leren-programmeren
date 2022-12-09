@@ -1,14 +1,14 @@
 boodschappen_tas_dic = {
 
 }
-tellertje = 1
+
 
 while True:
     vraagboodschap = input("Voeg een product toe aan het lijst (typ hier): ")
     if vraagboodschap in boodschappen_tas_dic:
         boodschappen_tas_dic[vraagboodschap] += 1
     else: 
-        boodschappen_tas_dic.update({vraagboodschap : tellertje})
+        boodschappen_tas_dic.update({vraagboodschap : 1})
     voeg_product = input("wil je nog een product toe(typ hier):")
     if voeg_product == "ja":
         continue
