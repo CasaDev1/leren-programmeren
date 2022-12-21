@@ -9,7 +9,7 @@ for fruit in fruitmand:
     kg_lijst.sort(reverse=True)
   
 for naam, gewicht in zip(namen_lijst, kg_lijst):
-    print(f"Naam: {naam}\nGewicht: {gewicht}kg")
+    print(f"Naam: {naam}\nGewicht: {gewicht}")
 
 
 
