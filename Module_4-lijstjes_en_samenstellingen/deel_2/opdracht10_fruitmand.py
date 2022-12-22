@@ -1,24 +1,10 @@
 from fruitmand import fruitmand
-namen_lijst = []
-kg_lijst = []
-for fruit in fruitmand:
-    fruitkg =  fruit['weight'] / 1000, 'kg'
-    fruit_namen =fruit['name']
-    namen_lijst.append(fruit_namen)
-    kg_lijst.append(fruitkg)
-    kg_lijst.sort(reverse=True)
-  
-for naam, gewicht in zip(namen_lijst, kg_lijst):
-    print(f"Naam: {naam}\nGewicht: {gewicht}")
+from operator import itemgetter
 
+fruit_sorted = sorted(fruitmand, key=itemgetter('weight'), reverse=True )
+print(fruit_sorted)
+for fruit in fruit_sorted:
+    kg = (fruit['weight'] / 1000)
+    naam = fruit['name']
 
-
-
-    
-
-    
-
-
-    
-
-    
+    print(f"naam: {naam}               gewicht: {kg}kg")
