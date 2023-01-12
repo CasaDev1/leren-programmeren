@@ -1,4 +1,4 @@
-from fruitmand import fruitmand
+from fruitmandtest import fruitmand
 gewicht = 0
 letter = 0
 vertaal_dict = dict(orange = "oranje", red = "red", brown = "bruin", green = "groen", yellow = "geel", pink = "roze", purple = "paars", black = "zwart")
