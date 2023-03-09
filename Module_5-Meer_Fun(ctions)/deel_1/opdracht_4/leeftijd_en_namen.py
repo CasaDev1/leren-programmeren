@@ -21,7 +21,7 @@ while True:
     else:
         break    
 for y in namen_leeftijd_lijst:
-    name = y["naam"]
-    age = y["leeftijd"]
-    print(f"{name} is {age} jaar")
+    namen = y["naam"]
+    leeftijden = y["leeftijd"]
+    print(f"{namen} is {leeftijden} jaar")
     
