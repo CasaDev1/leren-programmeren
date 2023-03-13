@@ -19,18 +19,13 @@ def start():
 
 
 
-
-
-
-voetbal_vragen = {
+vragen = {
         'Hij is een Argentijn en hij speelde bij Barcalona en is 1 van de beste in de wereld. Kies A = Di Maria B = Messi C =Ronaldo' : "b",
         'Hij is van surinaamse achtergrond speelt bij Nederland en is pas naar Ajax gegaan.Kies A= Berghuis B= Bergwijn C= Frenkie': "b",
         'Hij is een Portugees en heeft bij Real Madrid gespeeld. Kies A = Cristiano Ronaldo B= Ronaldo Lima C= Bruno' : "a",
         'Hij komt uit Noorwegen speelt pas bij Man City en is een spits. kies A= Gabriel B= Choupo-Moting C= Haaland': "c",
         'Het is een poolse spits die pas geleden naar Barcalona is gegaan. kies A= Lewandowski B= Szczęsny C=Kante' : "a",
         'Het is Fransman die voor PSG speelt en is een spits en is op dit moment 1 van de snelste voetballers nu. Kies A= Mbappe B= Ben yedder C= Benzema' : "a",
-    }
-random_vragen = {
         'Hoeveel dagen doet de aarde erover om 1 keer om de zon te draaien?' : "365 dagen",
         'Welke planeet is de grootste in ons zonnestelsel?' : "jupiter",
         'Wat is de hoofdstad van Japan?' : "tokyo",
