@@ -60,6 +60,10 @@ lestDictionairy2 = {
     'copper' : 3120
 }
 
+
+
+
+
 if getPersonCashInGold(lestDictionairy2) != 652.8:
     print_colorvars(vars=['Test 10 is False'], color='red')
 else:

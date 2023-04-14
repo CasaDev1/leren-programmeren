@@ -21,10 +21,10 @@ def platinum2gold(amount:int) -> float:
     return amount * 25
 
 def getPersonCashInGold(personCash:dict) -> float:
-    platinum = personCash['platinum'] * 25
+    platinum = platinum2gold(personCash['platinum'])
     goud = personCash['gold']
-    zilver = personCash['silver'] / 5
-    koper = personCash['copper'] / 10 / 5
+    zilver = silver2gold(personCash['silver'])
+    koper = copper2gold(personCash['copper'])
     totaal = platinum + goud + zilver + koper
     return totaal
 
@@ -45,7 +45,7 @@ def getFromListByKeyIs(list:list, key:str, value:any) -> list:
         if key in x and x[key] == value:
             lijst.append(x)
             print(value)
-            print (lijst)
+            print(lijst)
     return lijst    
 
 def getAdventuringPeople(people:list) -> list:
