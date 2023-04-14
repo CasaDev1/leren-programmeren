@@ -44,6 +44,8 @@ def getFromListByKeyIs(list:list, key:str, value:any) -> list:
     for x in list:
         if key in x and x[key] == value:
             lijst.append(x)
+            print(value)
+            print (lijst)
     return lijst    
 
 def getAdventuringPeople(people:list) -> list:
@@ -78,7 +80,8 @@ def getTotalRentalCost(horses:int, tents:int) -> float:
 def getItemsAsText(items:list) -> str:
     item_tekst = []
     for item in items:
-        item_tekst.append("{amount}{unit} {name}".format(amount=item["amount"], name=item["name"], unit=item["unit"]))
+        item_tekst.append(f"{item['amount']}{item['unit']} {item['name']}")
+
 
     return ", ".join(item_tekst)
 
@@ -98,6 +101,7 @@ def getItemsValueInGold(items:list) -> float:
             goud = item['amount'] * item['price']['amount']
             list.append(goud)
     return sum(list)
+#sum is dat t alles bij elkaar op telt
 
 ##################### M04.D02.O8 #####################
 
