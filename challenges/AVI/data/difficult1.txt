@@ -1,0 +1,4 @@
+1Programmeren 2is 3het 4proces 5van 6het 7creëren 8van 9instructies 10die 11een 12computer 13kan 14uitvoeren 15om 16een 17bepaald 18doel 19te 20bereiken, 21zoals 22het 23maken 24van 25een 26website, 27een 28spel 29of 30een 31app.
+32Programmeren 33vereist 34logisch 35denken, 36creativiteit 37en 38kennis 39van 40verschillende 41programmeertalen, 42die 43elk 44hun 45eigen 46syntaxis, 47functies 48en 49toepassingen 50hebben.
+51Programmeren 52kan 53leuk, 54uitdagend 55en 56lonend 57zijn, 58maar 59ook 60frustrerend, 61complex 62en 63tijdrovend, 64afhankelijk 65van 66de 67moeilijkheidsgraad 68van 69het 70project, 71de 72kwaliteit 73van
+ 74de 75code 76en 77de 78beschikbaarheid 79van 80hulpmiddelen 81en 82bronnen.
