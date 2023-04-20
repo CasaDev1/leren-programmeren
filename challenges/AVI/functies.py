@@ -34,7 +34,7 @@ def getFileContentAsString(textFile: str) -> str:
 def getNumberOfCharacters(text: str) -> int:
     teller = 0
     for x in text:
-        if x != ' ' and x != '\n':
+        if x in ALLOWED_IN_WORD:
             teller += 1
     return teller
 
@@ -43,7 +43,7 @@ def getNumberOfCharacters(text: str) -> int:
 def getNumberOfSentences(text: str) -> int:
     teller = 0
     for x in text:
-        if x in [".","!","?"]:
+        if x in ".!?":
             teller += 1
     return teller
 
