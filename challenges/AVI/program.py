@@ -9,6 +9,7 @@ def calculate():
     characterLabel.config(text=f"Karakters: {getNumberOfCharacters(textToBeCalculated)}")
     sentencesLabel.config(text =f"Zinnen: {getNumberOfSentences(textToBeCalculated)}")
     wordsLabel.config(text =f"Woorden: {getNumberOfWords(textToBeCalculated)}")
+    aviscoreLabel.config(text =f"Avi Score: {BerekentAviScore(textToBeCalculated)}")
     
 
 #variables TK
@@ -20,12 +21,15 @@ calculateButton = ttk.Button(root, text='Bereken score(s)', command=calculate)  
 characterLabel = tk.Label(root, text=f'Karakters:', width=20, bg='black', fg='white') # generate characterLabel
 sentencesLabel = tk.Label(root, text=f'Zinnen:', width=20, bg='black', fg='white')    # generate sentencesLabel
 wordsLabel = tk.Label(root, text=f'Woorden:', width=20, bg='black', fg='white')    # generate WordsLabel
+aviscoreLabel = tk.Label(root, text=f'Avi Score:', width=20, bg='black', fg='white')
 
 calculateInput.place(x=20, y=20)   # place is one of the ways to put elements on root (window).
 calculateButton.place(x=20, y=520)
-characterLabel.place(x=400, y=560)
+characterLabel.place(x=180, y=560)
 sentencesLabel.place(x=20, y=560)
-wordsLabel.place(x=200, y=560)
+wordsLabel.place(x=340, y=560)
+aviscoreLabel.place(x=490, y=560)
+
 
 # start program
 root.mainloop() # runs until stopped with default stop button.

@@ -34,7 +34,7 @@ def getFileContentAsString(textFile: str) -> str:
 def getNumberOfCharacters(text: str) -> int:
     teller = 0
     for x in text:
-        if x != ' ' and x != '\t' and x != '\n':
+        if x != ' ' and x != '\n':
             teller += 1
     return teller
 
@@ -52,3 +52,25 @@ def getNumberOfWords(text: str) -> int:
     # de split methode split de strings in twee dus doet hij automatisch een spatie dus hij telt de spaties automatisch
     woorden = text.split()
     return len(woorden)
+
+def BerekentAviScore(text: str) -> int:
+    aantal_woorden = getNumberOfWords(text)
+    aantal_zinnen = getNumberOfSentences(text)
+    gemiddelde_woorden_per_zin = aantal_woorden / aantal_zinnen
+    
+    avi_score = 0
+    
+    if gemiddelde_woorden_per_zin <= 7:
+        avi_score = 5
+    elif gemiddelde_woorden_per_zin == 8:
+        avi_score = 6
+    elif gemiddelde_woorden_per_zin == 9:
+        avi_score = 7
+    elif gemiddelde_woorden_per_zin == 10:
+        avi_score = 8
+    elif gemiddelde_woorden_per_zin == 11:
+        avi_score = 11
+    elif gemiddelde_woorden_per_zin > 11:
+        avi_score = 12
+    
+    return avi_score
