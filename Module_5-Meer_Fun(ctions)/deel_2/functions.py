@@ -119,7 +119,7 @@ def getCashInGoldFromPeople(people:list) -> float:
 ##################### M04.D02.O9 #####################
 
 def getInterestingInvestors(investors:list) -> list:
-    return [x for x in investors if x["profitReturn"] <= 10]
+    return [x for x in investors if x["profitReturn"] <= 10]# dit is een kortere versie van een for-loop die ik dan return 
 
 def getAdventuringInvestors(investors:list) -> list:
     return [x for x in investors if x["adventuring"] and x["profitReturn"] <= 10]
@@ -132,8 +132,10 @@ def getTotalInvestorsCosts(investors:list, gear:list) -> float:
 
     total += getJourneyFoodCostsInGold(len(AdventuringInvestors),len(AdventuringInvestors))
     total += getTotalRentalCost(len(AdventuringInvestors), len(AdventuringInvestors))
+    print(total)
 
     return total
+
 
 ##################### M04.D02.O10 #####################
 
@@ -156,7 +158,7 @@ def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
 def getInvestorsCuts(profitGold:float, investors:list) -> list:
     list = []
     for investor in getInterestingInvestors(investors):
-            list.append(round(investor['profitReturn'] / 100 * profitGold,2) )
+            list.append(round(investor['profitReturn'] / 100 * profitGold,2) )# round rond af op hoeveel getallen jij dat aangeeft in dit geval 2 decimalen
     return list
 
 def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> float:
