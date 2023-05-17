@@ -108,27 +108,26 @@ def getItemsValueInGold(items:list) -> float:
 ##################### M04.D02.O8 #####################
 
 def getCashInGoldFromPeople(people:list) -> float:
-    lijst = []
+    total = 0
     for w in people:
-        lijst.append(platinum2gold(w['cash']['platinum']))
-        lijst.append(silver2gold(w['cash']['silver']))
-        lijst.append(copper2gold(w['cash']['copper']))
-        lijst.append(w['cash']['gold'])
-    return sum(lijst)
+        total += platinum2gold(w['cash']['platinum'])
+        total += silver2gold(w['cash']['silver'])
+        total += copper2gold(w['cash']['copper'])
+        total += w['cash']['gold']
+    return total
 
 ##################### M04.D02.O9 #####################
 
 def getInterestingInvestors(investors:list) -> list:
     return [x for x in investors if x["profitReturn"] <= 10]# dit is een kortere versie van een for-loop die ik dan return 
-
+    
 def getAdventuringInvestors(investors:list) -> list:
     return [x for x in investors if x["adventuring"] and x["profitReturn"] <= 10]
 
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
     total = 0
     AdventuringInvestors = getAdventuringInvestors(investors)
-    for i in range(len(AdventuringInvestors)):
-        total += getItemsValueInGold(gear)
+    total += getItemsValueInGold(gear) * len(AdventuringInvestors)
 
     total += getJourneyFoodCostsInGold(len(AdventuringInvestors),len(AdventuringInvestors))
     total += getTotalRentalCost(len(AdventuringInvestors), len(AdventuringInvestors))
