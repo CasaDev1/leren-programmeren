@@ -168,7 +168,27 @@ def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> fl
 ##################### M04.D02.O13 #####################
 
 def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:list) -> list:
-    pass
+    people = [mainCharacter] + friends + investors
+    earnings = []
+
+    # haal de juiste inhoud op
+    adventuringFriends = getAdventuringFriends(friends)
+    interestingInvestors = getInterestingInvestors(investors)
+    adventuringInvestors = getAdventuringInvestors(investors)
+    investorsCuts = getInvestorsCuts(profitGold,investors)
+    goldCut = 0.0
+
+    # verdeel de uitkomsten
+    for person in people:
+        #code aanvullen
+
+        earnings.append({
+            'name'   : '??',
+            'start'  : 0.0,
+            'end'    : 0.0
+        })
+
+    return earnings
 
 ##################### view functions #####################
 def print_colorvars(txt:str='{}', vars:list=[], color:str='yellow') -> None:
