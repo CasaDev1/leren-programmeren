@@ -1,0 +1,25 @@
+als je het programma start zie je de zin hieronderen in de terminal
+“Welkom bijPapi Gelato je mag alle smaken kiezen zolang het maar vanille ijs is.”
+
+stap 1: Je wordt eerst gevraagd hoeveel bolletjes ijs je wilt hebben.
+   Afhankelijk van je antwoord ga je naar verschillende stappen.
+
+   - Als het door jou opgegeven aantal gelijk is aan of tussen de 4 en 8 ligt, krijg je de volgende tekst te zien: "Dan krijg je een {bakje} met {aantal} bolletje(s)".
+
+   - Als het door jou opgegeven aantal groter is dan 8, krijg je de volgende tekst te zien: "Sorry, zulke grote bakken hebben we niet" en word je teruggestuurd naar stap 1, waar je opnieuw wordt gevraagd wat je wilt bestellen.
+
+   - Als het door jou opgegeven aantal kleiner is dan of gelijk is aan 3 en groter dan 0, dan ga je naar stap 2
+
+
+
+
+Stap 2: De vraag luidt als volgt: "Wil je deze bolletjes in een hoorntje of een bakje?"
+   Als je antwoord een van de keuzes is, krijg je de volgende tekst te zien: "Hier is je {bakje of hoorntje} met {aantal_bolletjes} bolletjes."
+
+Stap 3: Je wordt gevraagd of je nog een bestelling wilt plaatsen.
+   Als je deze vraag met "ja" en ga je terug naar stap 1, waar je opnieuw wordt gevraagd wat je wilt bestellen.
+
+   Als je de vraag met "nee" beantwoordt, krijg je de volgende tekst te zien: dan wordt er bedankt tot ziens geprint
+
+   Als je de vraag anders beantwoordt, krijg je de volgende tekst te zien: "Sorry, dat begrijp ik niet..."
+
