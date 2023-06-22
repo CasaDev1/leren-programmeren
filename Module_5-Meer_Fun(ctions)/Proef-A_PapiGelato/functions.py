@@ -1,5 +1,5 @@
 
-# stap 1:
+# dit is stap 1:
 def get_aantal_bolletjes():
     while True:
         try:
@@ -15,7 +15,7 @@ def get_aantal_bolletjes():
             print("Sorry dat snap ik niet...")
     return aantal_bolletjes
 
-# stap 2
+#  dit is stap 2:
 def get_hoorntje_bakje(aantal_bolletjes):
     if aantal_bolletjes >= 4 and aantal_bolletjes <= 8:
         print(f"Hier is uw bakje met {aantal_bolletjes} bolletje(s).")
@@ -31,7 +31,7 @@ def get_hoorntje_bakje(aantal_bolletjes):
     return vraag_hoorntje_bakje
 
 
-# stap 3
+#  dit is stap 3:
 def meerBestellen():
     while True:
         meer_bestellen_vraag = input("Wilt u nog meer bestellen ja of nee?")
