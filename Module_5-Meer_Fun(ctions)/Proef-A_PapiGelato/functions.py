@@ -1,13 +1,10 @@
 
-# dit is stap 1:
+# hier bepaal ik het aantal bolletjes:
 def get_aantal_bolletjes():
     while True:
         try:
             aantal_bolletjes = int(input("Hoeveel bolletjes wilt u?"))
             if aantal_bolletjes >= 1 and aantal_bolletjes <= 3:
-                break
-            elif aantal_bolletjes >= 4 and aantal_bolletjes <= 8:
-                print(f"Dan krijgt u van mij een bakje met {aantal_bolletjes} bolletjes.")
                 break
             elif aantal_bolletjes > 8:
                 print("Sorry, zulke grote bakken hebben we niet.")
@@ -15,7 +12,7 @@ def get_aantal_bolletjes():
             print("Sorry dat snap ik niet...")
     return aantal_bolletjes
 
-#  dit is stap 2:
+#  hier bepaal ik of het een hoorntje of een bakje is:
 def get_hoorntje_bakje(aantal_bolletjes):
     if aantal_bolletjes >= 4 and aantal_bolletjes <= 8:
         print(f"Hier is uw bakje met {aantal_bolletjes} bolletje(s).")
@@ -31,7 +28,7 @@ def get_hoorntje_bakje(aantal_bolletjes):
     return vraag_hoorntje_bakje
 
 
-#  dit is stap 3:
+#  hier vraag ik of u meer wilt bestellen:
 def meerBestellen():
     while True:
         meer_bestellen_vraag = input("Wilt u nog meer bestellen ja of nee?")
