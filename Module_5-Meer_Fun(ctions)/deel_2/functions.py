@@ -46,8 +46,6 @@ def getFromListByKeyIs(list:list, key:str, value:any) -> list:
     for x in list:
         if key in x and x[key] == value:
             lijst.append(x)
-            print(value)
-            print(lijst)
     return lijst    
 
 def getAdventuringPeople(people:list) -> list:
@@ -131,8 +129,6 @@ def getTotalInvestorsCosts(investors:list, gear:list) -> float:
 
     total += getJourneyFoodCostsInGold(len(AdventuringInvestors),len(AdventuringInvestors))
     total += getTotalRentalCost(len(AdventuringInvestors), len(AdventuringInvestors))
-    print(total)
-
     return total
 
 
@@ -162,7 +158,6 @@ def getInvestorsCuts(profitGold:float, investors:list) -> list:
 
 def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> float:
     total = round((profitGold - sum(investorsCuts)) / fellowship,2)
-    print(investorsCuts)
     return total
 
 ##################### M04.D02.O13 #####################

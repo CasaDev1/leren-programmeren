@@ -8,13 +8,15 @@ stap 1: Je wordt eerst gevraagd hoeveel bolletjes ijs je wilt hebben.
 
    - Als het door jou opgegeven aantal groter is dan 8, krijg je de volgende tekst te zien: "Sorry, zulke grote bakken hebben we niet" en word je teruggestuurd naar stap 1, waar je opnieuw wordt gevraagd wat je wilt bestellen.
 
-   - Als het door jou opgegeven aantal kleiner is dan of gelijk is aan 3 en groter dan 0, dan ga je naar stap 2
+   - Als het door jou opgegeven aantal kleiner is dan of gelijk is aan 3 en groter dan 0, dan ga je naar stap 2 
+   anders: "dat snap ik niet" en dan ga je weer terug naar stap 1
 
 
 
 
 Stap 2: De vraag luidt als volgt: "Wil je deze bolletjes in een hoorntje of een bakje?"
-   Als je antwoord een van de keuzes is, krijg je de volgende tekst te zien: "Hier is je {bakje of hoorntje} met {aantal_bolletjes} bolletjes."
+   Als je antwoord een van de keuzes is, krijg je de volgende tekst te zien: "Hier is je {bakjvanhoorntje} met {aantal_bolletjes} bolletjes."
+   anders: "dat snap ik niet"
 
 Stap 3: Je wordt gevraagd of je nog een bestelling wilt plaatsen.
    Als je deze vraag met "ja" en ga je terug naar stap 1, waar je opnieuw wordt gevraagd wat je wilt bestellen.
