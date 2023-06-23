@@ -1,3 +1,6 @@
+PRIJS_BOLLETJE = 1.10
+PRIJS_HOORNTJE = 1.25
+PRIJS_BAKJE = 0.75
 
 # hier bepaal ik het aantal bolletjes:
 def get_aantal_bolletjes():
@@ -33,10 +36,23 @@ def meerBestellen():
     while True:
         meer_bestellen_vraag = input("Wilt u nog meer bestellen ja of nee?")
         if meer_bestellen_vraag == "ja":
-            break
+            return True
         elif meer_bestellen_vraag == "nee":
-            print("Bedankt en tot ziens!")
-            break
+            return False
         else:
             print("Sorry, dat snap ik niet..")
-    return meer_bestellen_vraag
+
+#hier bereken ik de bon
+def bonnetje(aantal_bolletjes, vraag_hoorntje_bakje):
+    if vraag_hoorntje_bakje == "bakje":
+        prijs = PRIJS_BAKJE
+        type = "bakje"
+    else:
+        prijs = PRIJS_HOORNTJE
+        type = "hoorntje"
+    totale_kosten = aantal_bolletjes * PRIJS_BOLLETJE + prijs
+    print('\n--- ["PapiGelato"]---')
+    print(f"Aantal bolletjes: {aantal_bolletjes}")
+    print(f"Type: {type}")
+    print(f"Totale kosten: €{totale_kosten:.2f}")
+    print("Bedankt en tot ziens!\n")
