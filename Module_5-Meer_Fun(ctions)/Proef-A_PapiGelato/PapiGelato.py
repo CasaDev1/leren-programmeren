@@ -7,6 +7,7 @@ meer_bestellen = "ja"
 while True:
     aantal_bolletjes = get_aantal_bolletjes()
     verpakking = get_hoorntje_bakje(aantal_bolletjes)
+    totaal_bollen = totaal_aantal_bollen(aantal_bolletjes)
     if not meerBestellen():
-        bonnetje(aantal_bolletjes, verpakking)
+        bonnetje(totaal_bollen)
         break
